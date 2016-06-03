@@ -1,0 +1,132 @@
+.preloader {
+  width: 100%;
+  height:100vh;
+  height: 100%;
+  position: fixed;
+  z-index: 678;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+.preload-logo,
+.loader-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+}
+.preload-logo {
+  top: 0;
+  height: 100%;
+  -webkit-transform: translate3d(0,25%,0);
+  transform: translate3d(0,25%,0);
+}
+.preload-logo img {margin: 0 auto;max-width: 90%}
+.loader-box {
+  bottom: 20%;
+}
+.preloader .loader-inner {
+  display: block;
+  margin: 0 auto;
+}
+.preloader .loader-box svg path {
+  fill: none;
+  stroke-width: 6;
+}
+
+.preloader .loader-box svg path.preloader-circlebg {
+  stroke: #83c5ec;
+}
+
+.preloader .loader-box svg path.preloader-circle {
+  -webkit-transition: stroke-dashoffset 0.2s;
+  -moz-transition: stroke-dashoffset 0.2s;
+  -o-transition: stroke-dashoffset 0.2s;
+  transition: stroke-dashoffset 0.2s;
+  stroke: #0768b4;
+}
+.loading .preload-logo,
+.loading .loader-box {
+  opacity: 1;
+  -webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+  animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loading .loader-box {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes animInitialHeader {
+  from { opacity: 0; -webkit-transform: translate3d(0,800px,0); }
+}
+
+@keyframes animInitialHeader {
+  from { opacity: 0; -webkit-transform: translate3d(0,800px,0); transform: translate3d(0,800px,0); }
+}
+.loaded .preload-logo,
+.loaded .loader-box {
+  opacity: 1;
+}
+.loaded .preload-logo {
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+  animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+  -webkit-transition: opacity .4s cubic-bezier(0.7,0,0.3,1);
+  -o-transition: opacity .4s cubic-bezier(0.7,0,0.3,1);
+  transition: opacity .4s cubic-bezier(0.7,0,0.3,1);
+}
+@-webkit-keyframes animLoadedLogo {
+  to { -webkit-transform: translate3d(0,100%,0)  scale(0); opacity: 0;}
+}
+@keyframes animLoadedLogo {
+  to { -webkit-transform: translate3d(0,100%,0)  scale(0); transform: translate3d(0,100%,0)  scale(0); opacity: 0;}
+}
+.loaded .loader-box {
+  -webkit-animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+  animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+@-webkit-keyframes animLoadedLoader {
+  to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+@keyframes animLoadedLoader {
+  to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+.loaded .preloader {
+  -webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+  animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader {
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes animLoadedHeader {
+  to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+.loaded  .main-content,
+.loaded .codrops-demos {
+  -webkit-animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+  animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loaded  .main-content {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+@-webkit-keyframes animLoadedContent {
+  from { opacity: 0; -webkit-transform: translateY(200px); }
+}
+@keyframes animLoadedContent {
+  from { opacity: 0; -webkit-transform: translateY(200px); transform: translateY(200px); }
+}
+.layout-switch .main-content {
+  -webkit-animation: none;
+  animation: none;
+}
+.layout-switch .preloader {
+  position: absolute;
+}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>S-style</title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/preloader.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="body">
+  <noscript>
+    <div><strong>Для полной функциональности этого сайта необходимо включить JavaScript.</strong> Вот <a href="http://artjoker.ua/ru/how-to-enable-javascript/" target="_blank">инструкции</a>, как включить JavaScript в вашем браузере.</div>
+    <style>
+      .preloader {display:none !important;}
+    </style>
+  </noscript>
+  <!--[if lte IE 8]>
+    <p class="off-js">Ваш браузер устарел, пожалуйста <b>обновите</b> его.</p>
+  <![endif]-->
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader">
+    <div class="preload-logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="loader-box">
+      <svg class="loader-inner" width="80px" height="80px" viewBox="0 0 80 80">
+        <path class="preloader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+        <path id="preloader-circle" class="preloader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+      </svg>
+    </div>
+  </div>
+  <!-- naw mobile -->
+  <nav id="menu" class="mm_menu nav-top">
+    <ul>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Услуги</a></li>
+      <li><span>Акции</span></li>
+      <li><a href="#">Клубные карты</a></li>
+      <li><a href="#">Расписание</a></li>
+      <li><a href="#">Команда</a></li>
+      <li><a href="#">Отзывы</a></li>
+      <li><a href="#">Галерея</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li>
+        <a href="#">Услуги</a>
+        <ul>
+          <li><a href="#">Функциональный тренинг</a></li>
+          <li><a href="#">Аэробика </a></li>
+          <li><a href="#">Step-аэробика</a></li>
+          <li><a href="#">Тай-бо </a></li>
+          <li><a href="#">Силовая аэробика</a></li>
+          <li><a href="#">Пилатес</a></li>
+          <li><a href="#">Калланетик</a></li>
+          <li><a href="#">Хатха-йога</a></li>
+          <li><a href="#">Интенсивная аэробика</a></li>
+          <li><a href="#">Belly-dance</a></li>
+          <li><a href="#">Современные танцы</a></li>
+          <li><a href="#">Стрип-пластика</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- nav mobile -->
+  <!-- PRELOADER -->
+  <div id="wrapper" class="main-content no-index">
+    <!--wrapper start-->
+    <!-- header SECTION-->
+    <header id="header" class="header header-dark  clearfix">
+      <div class="container-fluid">
+        <div class="logo"><a href="#"><img src="images/logo.svg" alt=""></a></div>
+        <div class="right-header">
+          <a href="#menu" class="menu-butt">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#" class="free-butt butt butt--white">Бесплатная тренировка</a>
+          <ul class="head-social social">
+            <li><a href="#" target="blank"><span class="icon-fb"></span></a></li>
+            <li><a href="#" target="blank"><span class="icon-vk"></span></a></li>
+            <li><a href="#" target="blank"><span class="icon-yt"></span></a></li>
+            <li><a href="#" target="blank"><span class="icon-inst"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header SECTION -->
+    <!-- breadcrumbs -->
+    <section class="breadcrumbs">
+      <div class="container-fluid">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><span>Расписание занятий</span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- breadcrumbs -->
+    <section class="schedule-box">
+      <div class="schedule-filter">
+         <select placeholder="Выберите день недели" name="sh_day" class="sh_day">
+            <option value="day_all" disabled="">Выберите день недели</option>
+            <option value="mon">Понедельник</option>
+            <option value="tue">Вторник</option>
+            <option value="wen">Среда</option>
+            <option value="thu">Четверг</option>
+            <option value="fri">Пятница</option>
+            <option value="sat">Суббота</option>
+            <option value="sun">Воскресенье</option>
+         </select>
+         <select placeholder="Занятия по направлениям" name="sh_services">
+            <option value="serv_all">Занятия по направлениям</option>
+            <option value="serv3">Stretching</option>
+            <option value="serv4">Fitness</option>
+            <option value="serv5">Step&amp;Sculpt</option>
+            <option value="serv6">Fitness Mix</option>
+            <option value="serv7">Zumba</option>
+            <option value="serv8">Slide</option>
+            <option value="serv9">Fitness Intensive</option>
+            <option value="serv10">Fitball</option>
+            <option value="serv11">TRX</option>
+            <option value="serv12">Pilates</option>
+            <option value="serv13">Strip Dance</option>
+            <option value="serv14">Power Stretching</option>
+            <option value="serv15">Step</option>
+            <option value="serv16">Tabata</option>
+            <option value="serv17">Functional Training</option>
+            <option value="serv18">Body Balance</option>
+            <option value="serv19">Dance Aerobic</option>
+            <option value="serv20">Fitcross</option>
+            <option value="serv21">Yoga</option>
+            <option value="serv23">Lady Dance</option>
+            <option value="serv24">Pilates Allegro</option>
+            <option value="serv25">Hatha yoga</option>
+            <option value="serv26">Парная йога</option>
+            <option value="serv27">Total workout</option>
+            <option value="serv28">Хатха йога</option>
+            <option value="serv29">Power training </option>
+            <option value="serv30">Тайский йога-массаж</option>
+            <option value="serv31">Boxing</option>
+            <option value="serv32">Body Sculpt</option>
+            <option value="serv33">Low II</option>
+            <option value="serv34">Body Power</option>
+            <option value="serv35">Crossfit Light</option>
+            <option value="serv36">Yoga RELAX</option>
+            <option value="serv37">ABL</option>
+            <option value="serv38">FLEX</option>
+            <option value="serv39">Power Pilates</option>
+            <option value="serv40">BUMS + ABS</option>
+            <option value="serv41">Booty Dance</option>
+            <option value="serv43">Booty + BUMS</option>
+            <option value="serv44">Lady Style</option>
+            <option value="serv45">Pump-it-up</option>
+            <option value="serv46">Crossfit</option>
+            <option value="serv47">Yoga Stretching</option>
+         </select>
+         <select placeholder="Выбрать тренера" name="sh_trainers">
+            <option value="tr_all">Выбрать тренера</option>
+            <option value="tr39">Шершень Татьяна</option>
+            <option value="tr42">Ряшенцева Валерия</option>
+            <option value="tr43">Корыстина Дарья</option>
+            <option value="tr44">Левина Александра</option>
+            <option value="tr45">Сытин Ярослав</option>
+            <option value="tr46">Перелет Лилия</option>
+            <option value="tr38">Сытник Глеб</option>
+            <option value="tr35">Левкопулос Игорь</option>
+            <option value="tr36">Криворучко Аркадий</option>
+            <option value="tr37">Пискун Олег</option>
+            <option value="tr47">Попова Алла</option>
+            <option value="tr49">Бурун Евгения</option>
+            <option value="tr50">Ступак Ирина</option>
+            <option value="tr58">Калмыкова Катарина</option>
+            <option value="tr54">Дягилева Дарина</option>
+            <option value="tr56">Логвинова Ирина</option>
+            <option value="tr59">Троян Михаил</option>
+            <option value="tr60">Волк Алик</option>
+            <option value="tr61">Жолобова Татьяна</option>
+         </select>
+         <select placeholder="Выберите время" name="sh_time">
+            <option value="time_all">Выберите время</option>
+            <option value="morning">Утро</option>
+            <option value="day">День</option>
+            <option value="evening">Вечер</option>
+         </select>
+         <a href="#" class="butt schedule-download">Скачать расписание</a>
+      </div>
+      <div class="schedule-table clearfix">
+        <div class="schedule-table-top clearfix">
+          <table>
+            <tr>
+              <td><img src="images/clock.png" height="25" width="26" alt="" class="clc"></td>
+              <td data-day="1">Понедельник</td>
+              <td data-day="2">Вторник</td>
+              <td data-day="3">Среда</td>
+              <td data-day="4">Четверг</td>
+              <td data-day="5">Пятница</td>
+              <td data-day="6">Суббота</td>
+              <td data-day="7">Воскресение</td>
+            </tr>
+          </table>
+        </div>
+        <div class="schedule-table-body">
+          <table>
+            <tr>
+              <td data-time-cell="08.00">08.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="08.15">08.15</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="08.30">08.30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="08.45">08.45</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="09.00">09.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="09.15">09.15</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="09.30">09.30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="09.45">09.45</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="10.00">10.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="10.15">10.15</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="10.30">10.30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="10.45">10.45</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="11.00">11.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="11.15">11.15</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="11.30">11.30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="11.45">11.45</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-time-cell="12.00">12.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <div class="schedule-item" data-day="1" data-color="1" data-b-time="09.15" data-time="105" data-area="1">
+            Yoga
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="3" data-color="2" data-b-time="08.15" data-time="150" data-area="2">
+            Pilates
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="1" data-color="2" data-b-time="08.00" data-time="45" data-area="3">
+            Step
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="2" data-color="3" data-b-time="08.45" data-time="60" data-area="3">
+            Yoga
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="4" data-color="3" data-b-time="08.15" data-time="75" data-area="3">
+            Step
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="5" data-color="2" data-b-time="08.15" data-time="105" data-area="2">
+            Pilates
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="3" data-color="3" data-b-time="08.00" data-time="45" data-area="3">
+            Pilates
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="3" data-color="3" data-b-time="11.00" data-time="60" data-area="3">
+            Pilates
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="7" data-color="1" data-b-time="08.00" data-time="120" data-area="3">
+            Step
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="7" data-color="3" data-b-time="09.00" data-time="120" data-area="1">
+            Step
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="6" data-color="2" data-b-time="08.00" data-time="120" data-area="1">
+            Step
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item" data-day="6" data-color="1" data-b-time="08.00" data-time="60" data-area="3">
+            Step
+            <div class="schedule-item__hover">
+              <span class="time">10:00 - 11:30  </span>
+              <span class="lng-time">1:30</span>
+              <span class="info-tbl js_open_table"></span>
+            </div>
+          </div>
+          <div class="schedule-item-info">
+            <div class="schedule-item__name">Step</div>
+            <ul>
+              <li>Бурун Евгения</li>
+              <li>Зал № 3</li>
+            </ul>
+            <p>Step – это отличный способ проработать все тело.</p>
+          </div>
+          <div class="overlay-table"></div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer id="footer" class="footer">
+      <div class="container-fluid">
+        <div class="foot-container clearfix">
+          <div class="foot-top">
+            <div class="foot-menu foot-menu--1">
+              <div class="foot-head">Меню</div>
+              <ul class="foot-nav">
+                <li><a href="#">О нас</a></li>
+                <li><span>Услуги</span></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Клубные карты</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="foot-menu foot-menu--2">
+              <div class="foot-head">Услуги</div>
+              <div class="foot-col">
+                <ul class="foot-nav">
+                  <li><a href="#">Функциональный тренинг</a></li>
+                  <li><a href="#">Аэробика</a></li>
+                  <li><a href="#">Step-аэробика</a></li>
+                  <li><a href="#">Тай-бо</a></li>
+                  <li><a href="#">Силовая аэробика</a></li>
+                  <li><a href="#">Пилатес</a></li>
+                  <li><a href="#">Калланетик</a></li>
+                  <li><a href="#">Хатха-йога</a></li>
+                </ul>
+              </div>
+              <div class="foot-col">
+                <ul  class="foot-nav">
+                  <li><a href="#">Интенсивная аэробика</a></li>
+                  <li><a href="#">Belly-dance</a></li>
+                  <li><a href="#">Современные танцы</a></li>
+                  <li><a href="#">Стрип-пластика</a></li>
+                </ul>
+                <a href="#" class="butt butt--white">Больше услуг</a>
+              </div>
+            </div>
+            <div class="foot-contact">
+              <div class="foot-head">Мы в социальных сетях</div>
+              <ul class="social">
+                <li><a href="#" target="blank"><span class="icon-fb"></span></a></li>
+                <li><a href="#" target="blank"><span class="icon-vk"></span></a></li>
+                <li><a href="#" target="blank"><span class="icon-yt"></span></a></li>
+                <li><a href="#" target="blank"><span class="icon-inst"></span></a></li>
+              </ul>
+              <div class="newsletter">
+                <span>Новостная рассылка</span>
+                <form action="#" class="js_validate">
+                  <div class="form-gr input-box input-box--area">
+                    <input type="email" required data-validate="email" id="inpnews" class="input-anim" />
+                    <label for="inpnews">Email</label>
+                  </div>
+                  <button type="submit" class="butt" data-toggle="modal" data-target="#complite">
+                      Подписаться
+                  </button> 
+                </form>
+                <div class="box-foot">
+                  <div class="box-foot__col">
+                    <a href="tel:0577588887">(057) 758-88-87</a>
+                    <a href="mailto:info@s-style.com.ua">info@s-style.com.ua</a>
+                  </div>
+                  <div class="box-foot__col">
+                    <a href="#" class="butt butt--white" data-toggle="modal" data-target="#write">Написать нам</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-holder">
+        <div class="container-fluid">
+          <div class="foot-container">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12 text-left">
+                Спортивный стиль © 2015 . Все права защищены
+              </div>
+              <div class="col-sm-6 col-xs-12 text-right">
+                Разработка и поддержка сайтов - <a href="http://artjoker.ua" target="_blank">Artjoker</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+      <div id="complite" class="modal fade" aria-hidden="true">
+        <button type="button" class="close-modal" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="modal-dialog">
+          <div class="modal-content text-center">
+            <div class="modal-body clearfix">
+             <div class="head-modal">Спасибо </div>
+             <div class="subhead-modal">ОТра таарра</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="write" class="modal fade" aria-hidden="true">
+        <button type="button" class="close-modal" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="modal-dialog">
+          <div class="modal-content text-center">
+            <div class="modal-body clearfix">
+             <div class="head-modal">Написать нам</div>
+             <form action="#" class="text-center js_validate">
+               <div class="form-gr input-box">
+                 <input type="text" id="modal-name" required class="input-anim">
+                 <label for="modal-name">Имя*</label>
+               </div>
+               <div class="form-gr input-box">
+                 <input type="email" id="modal-email" required data-validate="email" class="input-anim">
+                 <label for="modal-email">Email*</label>
+               </div>
+               <div class="form-gr input-box">
+                 <input type="tel" id="modal-phone" required data-validate="phone" class="input-anim">
+                 <label for="modal-phone">Телефон*</label>
+               </div>
+               <div class="form-gr input-box input-box--area">
+                 <textarea id="modal-text" class="input-anim"></textarea>
+                 <label for="modal-text">Сообщение</label>
+               </div>
+               <button type="submit" class="butt" data-toggle="modal" data-target="#complite">
+                   Отправить
+               </button> 
+             </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+    </footer>
+    <!-- FOOTER SECTION -->
+    <div class="modal-overlay" data-dismiss="modal" aria-hidden="true"></div>
+  </div>
+  <!--wrapper end-->
+  <link rel="stylesheet" property="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" property="stylesheet" type="text/css" href="css/swiper.min.css"> 
+  <link rel="stylesheet" property="stylesheet" type="text/css" href="css/jquery.mmenu.all.css">
+  <link rel="stylesheet" property="stylesheet" type="text/css" href="css/icoons.css">
+  <link rel="stylesheet" property="stylesheet" type="text/css" href="css/style.css">
+
+  <script type="text/javascript" src="js/classie.js"></script>
+  <script type="text/javascript" src="js/pathLoader.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script> 
+  <script type="text/javascript" src="js/jquery.mmenu.all.min.js"></script>
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>  <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+  <script type="text/javascript"  src="js/main.js"></script>
+</body>
+</html>
